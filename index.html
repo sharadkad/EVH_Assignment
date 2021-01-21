@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EVH Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>    
+</head>
+
+<body>
+    <div class ="main-container">
+        <div class="row content-center">
+        <div class ="col-11 col-sm-8 col-md-3 record-input">
+            <h2>Contact Details</h2>         
+            <form class="form-inline d-flex flex-column" id="form" action="Javascript:void(0)">
+                <label for="Name">First Name</label>
+                <input placeholder="Name..." type="text" pattern="[A-Za-z]+$" minlength="2" class="form-control mb-3 mt-1" id="firstName" required/>
+                <p class="error-message"></p>
+                <label for="Name">Last Name</label>
+                <input placeholder="last Name..." type="text" pattern="[A-Za-z]+$" minlength="2"  class="form-control mb-3 mt-1" id="lastName" required />
+                <p class="error-message"></p>
+                <label for="Name">Email</label>
+                <input placeholder="Email Address..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" class="form-control mb-3 mt-1" id="inputEmail" required />
+                <p class="error-message"></p>
+                <label for="Name">Phone No</label>
+                <input placeholder="Phone Number..." type="tel"  pattern="[0-9]+$" minlength="6" class="form-control mb-3 mt-1" id="inputPhone" required/>
+                <p class="error-message"></p>
+                <div id="submitButtons"><input class="btn btn-info mt-2" type="submit" value="Add Contact"  name="submit"></div>
+            </form>
+        </div> 
+        <div class="col-11 col-sm-8 col-md-8 record-display">
+            <h2>Available Contacts: </h2>
+            <div class="table-responsive">
+                <table id="displayContacts" class="table table-bordered"></table>
+            </div>
+        </div>
+    </div>   
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
