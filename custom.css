@@ -67,6 +67,7 @@ input::placeholder {
     outline: none;
     border-radius: 25px;
     border: none;
+    width: 90% !important;
 }
 
 .content-center{
